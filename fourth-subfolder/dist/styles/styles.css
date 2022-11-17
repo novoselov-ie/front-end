@@ -361,6 +361,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  position: relative;
+  /* прочие стили */
 }
 .article-card:hover .article-card__picture {
   -webkit-box-shadow: 0 0 30px rgba(31, 30, 30, 0.55);
@@ -376,6 +378,10 @@ img {
   margin-right: 60px;
   font-size: 0;
   text-decoration: none;
+}
+.article-card__link:hover ~ .article-card__info .article-card__title-link {
+  color: #bc3324;
+  text-decoration-color: #bc3324;
 }
 .article-card__picture {
   display: block;
@@ -463,10 +469,6 @@ img {
   -webkit-transition: none;
   -o-transition: none;
   transition: none;
-}
-.article-card:hover ~ .article-card__info .article-card__title-link {
-  color: #bc3324;
-  text-decoration-color: #bc3324;
 }
 .article-card + .article-card {
   margin-top: 120px;
